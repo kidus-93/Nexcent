@@ -43,6 +43,7 @@
 body{
     display: flex;
     background-color: var(--white);
+    color: var(--dark-grey);
     flex-flow: column;
     font-family: "Inter", sans-serif;
 }
@@ -140,6 +141,9 @@ button:invalid{
     border-radius: 5px;
     padding: 9px 29px;
 }
+section{
+    margin-bottom: 28px;
+}
 .front_page{
     display:flex;
     justify-content: center;
@@ -163,4 +167,24 @@ button:invalid{
 
 span{
     color: var(--primary);
+}
+.Clients{
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.Clients_logo{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.Clients_info-container p{
+    margin: 10px;
 }
