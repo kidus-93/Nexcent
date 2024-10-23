@@ -1,0 +1,97 @@
+:root{
+    /* Neutral colors */
+    --black: #263238;
+    --dark-grey: #4d4d4d;
+    --grey: #717171;
+    --light-grey: #89939e;
+    --grey-blue: #abbed1;
+    --silver: #f5f7fa;
+    --white: #ffffff;
+
+    /* Primary */
+    --primary: #28cb8b;
+    --secondary: #263238;
+    --info: #2194f3;
+
+    /* Shades */
+    --shade-1: #43a046;
+    --shade-2: #388e3b;
+    --shade-3: #237d31;
+    --shade-4: #1b5e1f;
+    --shade-5: #103e13;
+
+    /* Tints */
+    --tint-1: #66bb69;
+    --tint-2: #81c784;
+    --tint-3: #a5d6a7;
+    --tint-4: #c8e6c9;
+    --tint-5: #e8f5e9;
+
+    /* Actions */
+    --warning: #fbc02d;
+    --error: #e53835;
+    --success: #2e7d31;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+}
+h1 {
+    font-weight: 600; /* Semi Bold */
+    font-size: 64px; /* Font size */
+    line-height: 76px; /* Line height */
+  }
+  h2 {
+    font-weight: 600; /* Semi Bold */
+    font-size: 36px;  /* Font size */
+    line-height: 44px; /* Line height */
+  }
+  h3 {
+    font-weight: 600; /* Semi Bold */
+    font-size: 28px;  /* Font size */
+    line-height: 36px; /* Line height */
+  }
+  h4 {
+    font-weight: 600; /* Semi Bold */
+    font-size: 20px;  /* Font size */
+    line-height: 28px; /* Line height */
+  }  
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 0 5vw;
+
+}
+.navbar-logo{
+    display: flex;
+}
+.navbar-logo img{
+width: 64px; height: 76px;
+}
+.navbar-links ul {
+    display: flex;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+.navbar-links ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.navbar-links ul li a, button{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+
