@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root{
     /* Neutral colors */
     --black: #263238;
@@ -9,7 +11,7 @@
     --white: #ffffff;
 
     /* Primary */
-    --primary: #28cb8b;
+    --primary: #4CAF4F;
     --secondary: #263238;
     --info: #2194f3;
 
@@ -40,6 +42,9 @@
 
 body{
     display: flex;
+    background-color: var(--white);
+    flex-flow: column;
+    font-family: "Inter", sans-serif;
 }
 h1 {
     font-weight: 600; /* Semi Bold */
@@ -65,6 +70,7 @@ nav{
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 15px;
     padding: 0 5vw;
 
@@ -73,7 +79,7 @@ nav{
     display: flex;
 }
 .navbar-logo img{
-width: 64px; height: 76px;
+width: 36px; height: 44px;
 }
 .navbar-links ul {
     display: flex;
@@ -89,9 +95,72 @@ a{
     align-items: center;
 }
 .navbar-links ul li a, button{
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
+.navbar-links ul li a:hover{
+    color: var(--primary);
+    transition: 0.3s;
+}
+
+button{
+    background-color: var(--primary);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+}
+button:hover{
+    background-color: var(--white);
+    border: 1px var(--primary) solid;
+    color: var(--primary);
+    border-radius: 5px;
+    padding: 9px 29px;
+    transition: 0.3s ease-in-out;
+}
+button:active{
+    background-color: var(--white);
+    border: 1px var(--primary) solid;
+    color: var(--primary);
+    border-radius: 5px;
+    padding: 9px 29px;
+}
+button:focus{
+    background-color: var(--white);
+    border: 1px var(--primary) solid;
+    color: var(--primary);
+    border-radius: 5px;
+    padding: 9px 29px;
+}
+button:invalid{
+    background-color: var(--error);
+    border: 1px var(--white) solid;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 9px 29px;
+}
+.front_page{
+    display:flex;
+    justify-content: center;
+    background-color: var(--silver);
+    align-items: center;
 
 
+}
+.Hero_section{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    color: var(--dark-grey);
+}
+
+.HS1_info-container p{
+    margin: 30px 0px;
+}
+
+span{
+    color: var(--primary);
+}
