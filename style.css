@@ -88,7 +88,7 @@ width: 36px; height: 44px;
 }
 a{
     text-decoration: none;
-    color: var(--dark-grey);
+    
 }
 .navbar-links ul {
     list-style-type: none;
@@ -99,6 +99,7 @@ a{
     font-size: 16px;
     line-height: 24px;
 }
+.navbar-links ul li a, .navbar-logo a{color: var(--dark-grey);}
 
 .navbar-links ul li a:hover{
     color: var(--primary);
@@ -357,3 +358,48 @@ span{
     margin-top: 30px; ;
 
 }
+.Demo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-flow: column;
+    height: 50vh; width: 100vw;
+    background-color: var(--silver);
+}
+.Demo h1{
+    margin: 60px 25vw;
+}
+.footer{
+    width: 100vw; height: 50vh;
+    /* margin-top: 30px; */
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer_info_container{
+    display: flex;
+    flex-flow: column;
+}
+.footer_info_container h2 {
+    margin-bottom: 100px;
+    
+}
+.footer_info_container p, ul li{
+    margin: 10px 0px 25px 0px ;
+}
+li{
+    list-style-type: none;
+}
+ul li a{
+    color: var(--white);
+}
+input{
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
