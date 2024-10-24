@@ -219,23 +219,35 @@ span{
     margin: 25px 0px;
 }
 
+.Second{
+    width: 100vw;
+}
 .more_1{
-    display: flex;
-    justify-content: center;
+ margin: 30px 0px;
 }
 .more{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
+    width: 100vw;
     align-items: center;
-    height: 50vh; width: 90vw;
-    gap: 30px;
-
+}
+.more_image_container{
+    width:40%;
+}
+ .more_info_container{
+    width:60%;
+}
+.more_image_container img{
+    margin-left: 120px;
 }
 .more_info_container p{
-    margin: 20px 0px;
+    margin: 50px 0px 30px 0px;
 }
-
+.details{
+    margin-right: 7vw; 
+    
+}
 .reach {
     height: 40vh;
     background-color: var(--silver);
@@ -269,5 +281,79 @@ span{
     flex-direction: column;
     margin-left: 10px;
 }
+.three{
+    background-color: var(--silver);
+}
+.more_logo{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    gap: 45px ;
+}
+.gallery{
+    display: flex;
+    flex-flow: column;
+    background-color: var(--white);
+    
+}
+.gallery_1 {
+    display: flex;
+    flex-flow: row;
+    gap: 80px;
+    justify-content: center;
+}
+.box_content {
+    width: 369.7px;height: 289px;
+    position: relative;
+    display: flex;
+}
 
+.box_content img{
+    animation: pulse 1.3s infinite;
+    border-radius: 20px;
+}
 
+@keyframes pulse{
+    from{
+      box-shadow: 0 0 0 0 rgba(198, 182, 179, 0.85);
+    }
+
+    to{
+      box-shadow: 0 0 0 30px rgba(201, 48, 48, 0);
+    }
+}
+
+.box_content:hover img {
+   position: absolute;
+   opacity: 0.3;
+   scale: 1.05;
+   transition: 0.5s;
+   animation-play-state: paused;
+} 
+
+.box_content h3 {
+   opacity: 0;
+}
+.box_content:hover h3 {
+   align-self: center;
+   transition: 0.5s;
+   text-align: center;
+   opacity: 1;
+} 
+.gallery_info_container{
+    margin: 20px 0px;
+    text-align: center;
+    justify-content: center;
+
+}
+.gallery_info_container p{
+    margin: 25px 30vw;
+    text-align: center;
+
+}
+.gallery_info_container h2{
+    margin-top: 30px; ;
+
+}
